@@ -5,25 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
     <form action="#" class="form" name="formulario">
-        <input type="text" name="nombre">
-        <label for="button_check">Bueno</label>
-        <input type="radio" value="Bueno">
-        <label for="button_check">Muy Bueno</label>
-        <input type="radio" value="Muy Bueno">
-        <label for="button_check">Excelente</label>
-        <input type="radio" value="Excelente">
-        <select id="opciones">
-            <option value="" id="selecciona">Seleccionar</option>
-            <option value="Buenos Aires">Bs As</option>
-            <option value="Santa Fe">Santa Fe</option>
-            <option value="Cordoba">Cordoba</option>
-        </select>
-        <input type="submit" value="Enviar" id="button">
+        <div class="container">
+            <label for="firstName">Nombre</label>
+            <div class="grupo-nombre">
+                <input type="text" name="nombre" id="firstName" placeholder="Juan" class="dato-">
+                <i id="inv" class="fas "></i>
+                <i id="valid" class="fas "></i>
+            </div>
+            <p class="form_nombre error-nombre">El campo nombre debe ser de 4 a 16 digitos y solo puede contener, numeros, letras y guion bajo</p>
+        </div>
+        <div class="container">
+            <label for="lastName">Apellido</label>
+            <div class="grupo-apellido">
+                <input type="text" name="apellido" id="lastName" placeholder="Garcia" class="dato-">
+                <i id="inv" class="fas "></i>
+                <i id="valid" class="fas "></i>
+            </div>
+            <p class="form_apellido error-apellido">El campo apellido debe ser de 4 a 16 digitos y solo puede contener, numeros, letras y guion bajo</p>
+        </div>
+        <div class="container">
+            <label>Masculino</label>
+            <input type="radio" value="Masculino" name="Genero">
+            <label>Femenino</label>
+            <input type="radio" value="Femenino" name="Genero">
+            <label>No definido</label>
+            <input type="radio" value="No definido" name="Genero">
+        </div>
+        <div class="container">
+            <select id="ciudad">
+                <option value="" id="seleccionar">Seleccionar</option>
+                <option value="Buenos Aires">Bs As</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Cordoba">Cordoba</option>
+            </select>
+            <p class="form_ciudad error-ciudad">El campo ciudad no puede estar vacio</p>
+        </div>
+        <div class="container">
+            <input type="submit" value="Enviar" id="button">
+            <p class="error mensaje-error"><i class="fas fa-exclamation-triangle"></i> Error: Por favor rellena el formulario correctamente</p>
+            <p class="parrafo exito">Su mensaje fue enviado con exito!</p>
+        </div>
     </form>
     <script src="/js/archivo2.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9a250eace9.js" crossorigin="anonymous"></script>
 </body>
 </html>

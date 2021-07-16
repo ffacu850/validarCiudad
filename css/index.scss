@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+label{
+    font-weight: 700;
+}
+p{
+    font-weight: 500;
+    font-size: 12px;
+}
+.mensaje-error{
+    display: none;
+}
+
+.error-nombre{
+    display: none;
+}
+
+.error-apellido{
+    display: none;
+}
+
+.exito{
+    display: none;
+}
+
+.error-ciudad{
+    display: none;
+}
+
+.form{
+    display: grid;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 320px;
+    grid-template-rows: repeat(3, 50px);
+}
+.grupo-nombre{
+    margin-top: 20px;
+    position: relative;
+}
+.grupo-apellido{
+    margin-top: 20px;
+    position: relative;
+}
+#firstName{
+    width: 250px;
+    padding: 10px;
+    outline: none;
+}
+
+#lastName{
+    width: 250px;
+    padding: 10px;
+    outline: none;
+}
+.fa-times-circle{
+    top: 13px;
+    right: 50px;
+    color:rgb(209, 4, 4);
+    position: absolute;
+    z-index: 100;
+
+}
+.fa-check-circle{
+    top: 13px;
+    right: 50px;
+    color: rgb(28, 211, 28);
+    position: absolute;
+    z-index: 100;
+}
+
+.correcto{
+    border: 3px solid rgb(28, 211, 28);
+    border-radius: 4px;
+}
+.incorrecto{
+    border: 3px solid rgb(209, 4, 4);
+    border-radius: 4px;
+}
+
+#ciudad{
+    width: 274px;
+    height: 50px;
+    font-size: 14px;
+    border-style: none;
+    font-weight: 700;
+}
+
+#button{
+    width: 274px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-style: none;
+    background: #555;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.parrafo{
+    margin: 0;
+    font-size: 18px;
+    color: rgb(28, 211, 28);
+}
+
+.error{
+    background: rgb(196, 41, 72);
+    width: 266px;
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+}
